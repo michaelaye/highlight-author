@@ -161,15 +161,17 @@ function Pandoc(doc)
 
   local surname, style
 
-  if meta.t == "MetaInlines" then
+  local meta_type = pandoc.utils.type(meta)
+
+  if meta_type == "Inlines" then
     -- Shorthand: highlight-author: "Aye"
     surname = pandoc.utils.stringify(meta)
     style = "bold"
-  elseif meta.t == "MetaMap" then
+  elseif meta_type == "table" then
     surname = meta.name and pandoc.utils.stringify(meta.name) or nil
     style = meta.style and pandoc.utils.stringify(meta.style) or "bold"
   else
-    io.stderr:write("highlight-author: invalid configuration\n")
+    io.stderr:write("highlight-author: invalid configuration (type: " .. meta_type .. ")\n")
     return doc
   end
 
