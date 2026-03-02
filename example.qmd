@@ -1,0 +1,15 @@
+---
+title: "Highlight Author Example"
+bibliography: example.bib
+citeproc: false
+filters:
+  - highlight-author
+
+highlight-author: "Aye"
+
+nocite: |
+  @*
+---
+
+This is an example document demonstrating the highlight-author extension.
+All entries below should have "Aye" and associated name parts highlighted in bold.
