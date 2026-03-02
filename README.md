@@ -1,6 +1,19 @@
 # highlight-author
 
-A [Quarto](https://quarto.org) extension that highlights a specific author's name in bibliography entries. Useful for CVs, publication lists, grant proposals, and academic homepages.
+A [Quarto](https://quarto.org) extension that highlights a specific author's name in bibliography entries.
+
+## Use cases
+
+Any document with a `bibliography` where you want one name to stand out:
+
+- **Academic homepages** — highlight yourself in your publication list
+- **CVs and resumes** — make your name visually distinct in references
+- **Grant proposals** — NSF, NASA, and other agencies require or expect the PI's name to be highlighted in the bibliography
+- **Tenure and promotion packets** — same convention as grants
+- **Lab group pages** — highlight all group members' contributions
+- **Theses and dissertations** — some institutions require the candidate's name to be marked
+
+Works with any Quarto output format: HTML, PDF, Word, and more.
 
 ## Installation
 
