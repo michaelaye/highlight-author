@@ -29,7 +29,7 @@ Add to your document's YAML front matter:
 bibliography: references.bib
 citeproc: false
 filters:
-  - highlight-author
+  - michaelaye/highlight-author
 
 highlight-author: "Aye"
 ```
@@ -95,7 +95,7 @@ If you use this extension alongside other bibliography filters (e.g., for year g
 ```yaml
 citeproc: false
 filters:
-  - highlight-author
+  - michaelaye/highlight-author
   - other-bibliography-filter.lua
 ```
 

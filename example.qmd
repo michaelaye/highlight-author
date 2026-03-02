@@ -3,7 +3,7 @@ title: "Highlight Author Example"
 bibliography: example.bib
 citeproc: false
 filters:
-  - highlight-author
+  - michaelaye/highlight-author
 
 highlight-author: "Aye"
 
