@@ -1,5 +1,7 @@
 # highlight-author
 
+[![DOI](https://zenodo.org/badge/1170763772.svg)](https://doi.org/10.5281/zenodo.18853710)
+
 A [Quarto](https://quarto.org) extension that highlights a specific author's name in bibliography entries.
 
 ## Use cases
@@ -98,6 +100,11 @@ filters:
   - michaelaye/highlight-author
   - other-bibliography-filter.lua
 ```
+
+## Related tools
+
+- [chronobib](https://github.com/michaelaye/chronobib) — Quarto extension that groups bibliography entries by year. Pairs well with highlight-author; put highlight-author first in the filter list.
+- [ads-bib-tools](https://github.com/michaelaye/ads-bib-tools) — Fetch your complete publication list from NASA ADS by ORCID, with cleanup and refereed/non-refereed tagging. The tagged `.bib` file works with chronobib's `split-keyword` feature to display refereed and non-refereed publications in separate tabs.
 
 ## License
 
